@@ -1,0 +1,77 @@
+header {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  width: 90vw;
+  padding: 1rem;
+  padding-left: 0;
+  @media (min-width: $break-med) {
+    // width: 1100px;
+  }
+  a {
+    color: #fff;
+    display: inline-block;
+  }
+  a.logo {
+    background-image: url('dicon.svg');
+    background-repeat: no-repeat;
+    color: $text;
+    padding-left: 3.5rem;
+    font-size: 2rem;
+    font-weight: normal;
+    padding-bottom: 0.5rem;
+  }
+}
+
+.searchbox {
+  width: 90vw;
+  @media (min-width: $break-med) {
+    // width: 1000px;
+  }
+  form {
+    background-color: $orange;
+    width: 28rem;
+    margin: 0px 2rem 0px 0px;
+    padding: 2rem 1rem;
+    border-radius: $radius;
+    @media (min-width: $break-med) {
+      margin-bottom: 2rem;
+    }
+  }
+  label {
+    display: block;
+    width: 90%;
+  }
+  input,
+  select {
+    display: block;
+    margin-bottom: 2rem;
+    font-size: 1rem;
+    height: 2rem;
+    width: 90%;
+  }
+  button:hover {
+    background-color: $text;
+  }
+  button:active {
+    background-color: $reddish;
+  }
+  button:focus {
+    border: 1px solid $specialblue;
+  }
+  button:disabled {
+    background-color: pink;
+  }
+}
+
+.results {
+  background-color: $orange;
+  width: 90vw;
+  padding: 1rem;
+  border-radius: $radius;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  ul {
+    list-style: none;
+  }
+}

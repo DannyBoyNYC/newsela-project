@@ -1,0 +1,82 @@
+// fonts
+$fonts: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+$systemMonospace: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Mono',
+  'Droid Sans Mono', 'Source Code Pro', monospace;
+// breakpoints
+$break-xwide: 81.25em;
+// 1300px
+$break-wide: 71.25em;
+// 1140px
+$break-standard: 61.25em;
+// 980px
+$break-med: 46.25em;
+// 760px
+$break-sm: 22.5em;
+// 360px
+
+// Conversions
+// 1.125rem   18px
+// 1rem       16px
+// 0.875rem   14px
+// .75rem     12px
+
+$radius: 0.25rem;
+
+// Brand colors
+$core: #00aeef;
+$focus: #009e9e;
+$signature: #1d4d99;
+
+$link: #007eb6;
+$orange: #f58420;
+$cyan: #00aeef;
+$cyan10: #e2f4fd;
+$blue100: #003366;
+$blue50: #5997b1;
+$webdarkcyan: #006991;
+$specialblue: #007eb6;
+$text: #111;
+$caption: #808285;
+$borders: #dcdcdc;
+$borders-callout: #820064;
+$lightgray: #f2f2f1;
+$gray10: #ebeced;
+$gray25: #d0d2d3;
+$gray50: #abacad;
+$gray75: #808285;
+$gray100: #585858;
+$fushia100: #820064;
+$green100: #339548;
+$red100: #cc3333;
+$light-turq: #81a69b;
+$orange: #d9c148;
+$reddish: #ad343e;
+
+$blk-100: rgba(0, 0, 0, 1);
+$blk-095: rgba(0, 0, 0, 0.95);
+$blk-090: rgba(0, 0, 0, 0.9);
+$blk-085: rgba(0, 0, 0, 0.85);
+$blk-080: rgba(0, 0, 0, 0.8);
+$blk-075: rgba(0, 0, 0, 0.75);
+$blk-070: rgba(0, 0, 0, 0.7);
+$blk-065: rgba(0, 0, 0, 0.65);
+$blk-060: rgba(0, 0, 0, 0.6);
+$blk-055: rgba(0, 0, 0, 0.55);
+$blk-050: rgba(0, 0, 0, 0.5);
+$blk-040: rgba(0, 0, 0, 0.4);
+$blk-020: rgba(0, 0, 0, 0.2);
+$blk-010: rgba(0, 0, 0, 0.1);
+
+$gray-100: rgba(51, 51, 51, 1);
+$gray-095: rgba(51, 51, 51, 0.95);
+$gray-090: rgba(51, 51, 51, 0.9);
+$gray-085: rgba(51, 51, 51, 0.85);
+$gray-080: rgba(51, 51, 51, 0.8);
+$gray-075: rgba(51, 51, 51, 0.75);
+$gray-070: rgba(51, 51, 51, 0.7);
+$gray-065: rgba(51, 51, 51, 0.65);
+$gray-060: rgba(51, 51, 51, 0.6);
+$gray-055: rgba(51, 51, 51, 0.55);
+$gray-050: rgba(51, 51, 51, 0.5);
+$gray-040: rgba(51, 51, 51, 0.4);
+$gray-010: rgba(51, 51, 51, 0.1);

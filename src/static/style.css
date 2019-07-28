@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Lato&display=swap');
+@import url("https://fonts.googleapis.com/css?family=Lato&display=swap");
 html {
   box-sizing: border-box;
 }
@@ -13,7 +13,7 @@ body {
   background-color: #81a69b;
   color: #111;
   margin: 1rem;
-  font-family: 'Lato', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
 a {
@@ -49,7 +49,7 @@ header a {
   display: inline-block;
 }
 header a.logo {
-  background-image: url('dicon.svg');
+  background-image: url("dicon.svg");
   background-repeat: no-repeat;
   color: #111;
   padding-left: 3.5rem;
@@ -97,3 +97,43 @@ header a.logo {
 .searchbox button:disabled {
   background-color: pink;
 }
+
+.results {
+  background-color: #d9c148;
+  width: 90vw;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.results ul {
+  list-style: none;
+}
+
+.readme {
+  background-color: #d9c148;
+  border-radius: 0.25rem;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+}
+.readme h1 {
+  margin: 0;
+}
+.readme h1 ~ ul {
+  padding: 0.25rem 1rem;
+  list-style: none;
+}
+.readme h1 ~ ul ul {
+  padding: 0 1rem;
+  list-style: none;
+}
+.readme a {
+  color: #007eb6;
+}
+.readme code {
+  font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+  font-size: 0.5rem;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
+/*# sourceMappingURL=style.css.map */

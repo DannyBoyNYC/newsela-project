@@ -1,11 +1,11 @@
 {
-  "name": "newsela-project",
+  "name": "nyu-course-view",
   "version": "1.0.0",
-  "description": "",
+  "description": "Tutorial section of a personal homepage",
   "main": "src/App.js",
   "dependencies": {
     "@reach/router": "^1.2.1",
-    "react": "^16.8.6",
+    "react": "^15.0.0 || ^16.0.0",
     "react-dom": "^16.8.6",
     "react-markdown": "^4.1.0"
   },
