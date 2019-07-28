@@ -1,0 +1,6 @@
+{
+  "semicolons": true,
+  "jsxSingleQuote": true,
+  "singleQuote": true,
+  "bracket-spacing": true
+}
