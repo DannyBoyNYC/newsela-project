@@ -1,23 +1,20 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import GithubContext from './context/github/githubContext';
 import { Link } from '@reach/router';
 
-const Results = ({ organization, sessions, sesh }) => {
-  console.log('sesh', sesh);
-  if (sesh == '' && !sessions.length) {
-    return (
-      <div className='results'>
-        <h2>Select a class and session</h2>
-      </div>
-    );
-  }
+import Spinner from './layout/Spinner';
+
+const Results = props => {
+  const githubContext = useContext(GithubContext);
+  const { sessions, loading } = githubContext;
+  const { organization } = props;
+
+  if (loading) return <Spinner />;
 
   return (
     <div className='results'>
-      <pre>
-        <code>{JSON.stringify(sesh, null, 2)}</code>
-      </pre>
-      {!sessions.length ? (
-        <h2>Select a class and session.</h2>
+      {organization == '' ? (
+        <h2>Select a class.</h2>
       ) : (
         sessions.map(session => {
           return (

@@ -1,49 +1,26 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useContext } from 'react';
+import GithubContext from './context/github/githubContext';
 
-import useDropDown from './useDropDown';
+import useDropDown from './hooks/useDropDown';
 import Results from './Results';
-import { orgQuery, getSessionsByOrg } from './queries/queries';
-import options, { endpoint } from './config/config.js';
+import Spinner from './layout/Spinner';
 
 const Search = () => {
-  const [organizations, setOrganizations] = useState([]);
-  const [sessions, setSessions] = useState([]);
+  const githubContext = useContext(GithubContext);
+  const { organizations, sessions, loading } = githubContext;
+
   const [organization, OrgDropdown] = useDropDown('Class', '', organizations);
   const [session, SessionDropdown] = useDropDown('Session', '', sessions);
 
-  const fetchOrganizations = async () => {
-    const response = await fetch(endpoint, {
-      ...options,
-      body: JSON.stringify({ query: orgQuery })
-    });
-    response
-      .json()
-      .then(response =>
-        setOrganizations(response.data.user.organizations.edges)
-      );
-  };
-
-  const fetchSessions = async () => {
-    const response = await fetch(endpoint, {
-      ...options,
-      body: JSON.stringify({ query: getSessionsByOrg(organization) })
-    });
-    response
-      .json()
-      .then(response =>
-        setSessions(response.data.organization.repositories.edges)
-      );
-  };
-
   useEffect(() => {
-    setOrganizations([]);
-    fetchOrganizations();
+    githubContext.fetchOrganizations();
   }, []);
 
   useEffect(() => {
-    setSessions([]);
-    fetchSessions();
-  }, [organization, session, setOrganizations, setSessions]);
+    organization !== '' && githubContext.fetchSessions(organization);
+  }, [organization]);
+
+  if (loading) return <Spinner />;
 
   return (
     <>
@@ -56,10 +33,10 @@ const Search = () => {
         >
           <OrgDropdown />
           <SessionDropdown />
-          <button disabled={session == []}>Submit</button>
+          <button>View on Github</button>
         </form>
       </div>
-      <Results organization={organization} sessions={sessions} sesh={session} />
+      <Results organization={organization} session={session} />
     </>
   );
 };

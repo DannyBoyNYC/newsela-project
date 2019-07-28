@@ -1,8 +1,7 @@
 export const orgQuery = `
-query {
+{
   user(login: "DannyBoyNYC") {
     organizations(last: 3) {
-      totalCount
       edges {
         node {
           id
@@ -54,6 +53,14 @@ export const getSessionsByOrg = organization => `
         }
       }
     }
+  }
+}
+`;
+
+export const testQuery = `
+{
+  user(login: "DannyBoyNYC") {
+    id
   }
 }
 `;

@@ -1,0 +1,3 @@
+export const GET_ORGANIZATIONS = 'GET_ORGANIZATIONS';
+export const GET_SESSIONS = 'GET_SESSIONS';
+export const SET_LOADING = 'SET_LOADING';
