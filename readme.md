@@ -1,12 +1,12 @@
 # Newsela Project 🗞️
 
-A quick project for review. A "miniature" version of some of the work I've done at Barclays.
+I cannot release any of my current work so here's a simple project for review.
 
 ## Instructions
 
-Github will hose my API key if I push it so you'll have to create a `.env` file in the root directory with the necessary information (provided via email or ping me at daniel.deverell@gmail.com if you don't have it). 
+Github will hose my API key if I push it so you'll have to copy and paste [this](http://daniel.deverell.com/newsela/shhh.txt) into the `.env` file. (The keys will be deleted after review.)
 
-Run `$ yarn` and `$ yarn run dev`.
+Run `$ yarn` and `$ yarn run dev` (or `npm` equivalents).
 
 The only Session worth looking at for now is "Front-End-Summer19".
 
@@ -25,3 +25,5 @@ To do:
 * Fix in-page links on readme's
 * Use CSS in JS, Emotion?
 * Add widescreen view (mobile first for now) 
+
+Feel free to email me at daniel.deverell@gmail.com if needed. 
