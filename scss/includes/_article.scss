@@ -1,5 +1,5 @@
 .readme {
-  background-color: $orange;
+  background-color: $bg;
   border-radius: $radius;
   padding: 0.5rem;
   font-size: 0.875rem;
@@ -16,7 +16,11 @@
   }
 
   a {
-    color: $link;
+    color: $text;
+  }
+  hr {
+    border-style: solid;
+    border-width: 1px;
   }
   code {
     font-family: $systemMonospace;

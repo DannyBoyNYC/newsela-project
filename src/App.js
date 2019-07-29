@@ -13,7 +13,7 @@ const App = () => {
         <div>
           <header>
             <Link className='logo' to='/'>
-              Courses
+              Learn You the Node
             </Link>
             <Link to='/'>Home</Link>
           </header>

@@ -4,7 +4,7 @@ import GithubContext from './githubContext';
 import GithubReducer from './githubReducer';
 
 import options, { endpoint } from '../../config/config.js';
-import { orgQuery, getSessionsByOrg } from '../../queries/queries';
+import { orgQuery, GET_SESSIONS_BY_ORG } from '../../queries/queries';
 
 import { GET_ORGANIZATIONS, GET_SESSIONS, SET_LOADING } from '../types';
 
@@ -37,7 +37,7 @@ const GithubState = props => {
     setLoading();
     const res = await fetch(endpoint, {
       ...options,
-      body: JSON.stringify({ query: getSessionsByOrg(org) })
+      body: JSON.stringify({ query: GET_SESSIONS_BY_ORG(org) })
     }).then(res => res.json());
     dispatch({
       type: GET_SESSIONS,

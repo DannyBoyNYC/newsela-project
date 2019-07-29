@@ -14,6 +14,9 @@ body {
   color: #111;
   margin: 1rem;
   font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: url("https://source.unsplash.com/nDqA4d5NL0k/2000x2000");
+  background-size: cover;
+  min-height: 100vh;
 }
 
 a {
@@ -26,10 +29,10 @@ a:hover {
 
 button {
   background-color: #7695b3;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 0.5rem 1.5rem;
   color: white;
   font-size: 1rem;
-  border: #888 1px solid;
   border-radius: 0.25rem;
   display: block;
   margin: 0 auto;
@@ -117,6 +120,7 @@ header {
   justify-content: space-between;
   max-width: 32rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   padding-left: 0;
 }
 header a {
@@ -141,10 +145,10 @@ header a.logo:hover {
 
 .searchbox {
   max-width: 32rem;
-  background-color: #8e9167;
+  background-color: #e5d987;
 }
 .searchbox form {
-  background-color: #8e9167;
+  background-color: #e5d987;
   width: 100%;
   margin: 0px 2rem 0px 0px;
   padding: 2rem;
@@ -154,6 +158,10 @@ header a.logo:hover {
   .searchbox form {
     margin-bottom: 2rem;
   }
+}
+.searchbox form span {
+  display: inline-block;
+  padding-bottom: 0.5rem;
 }
 .searchbox label {
   display: block;
@@ -183,8 +191,9 @@ header a.logo:hover {
 }
 
 .results {
-  background-color: #8e9167;
+  background-color: #e5d987;
   max-width: 32rem;
+  min-height: 6rem;
   padding: 1rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
@@ -194,8 +203,12 @@ header a.logo:hover {
   list-style: none;
 }
 
+article {
+  max-height: 90vh;
+}
+
 .readme {
-  background-color: #d9c148;
+  background-color: #e5d987;
   border-radius: 0.25rem;
   padding: 0.5rem;
   font-size: 0.875rem;
@@ -212,7 +225,11 @@ header a.logo:hover {
   list-style: none;
 }
 .readme a {
-  color: #007eb6;
+  color: #111;
+}
+.readme hr {
+  border-style: solid;
+  border-width: 1px;
 }
 .readme code {
   font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
@@ -223,6 +240,10 @@ header a.logo:hover {
 .results h3 {
   font-size: 1.25rem;
   margin-bottom: 0.5rem;
+}
+.results a {
+  text-decoration: underline;
+  text-transform: capitalize;
 }
 
 /*# sourceMappingURL=style.css.map */

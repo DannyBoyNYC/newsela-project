@@ -5,6 +5,7 @@ header {
   justify-content: space-between;
   max-width: 32rem;
   padding: 1rem;
+  padding-bottom: 2rem;
   padding-left: 0;
   @media (min-width: $break-med) {
   }
@@ -44,6 +45,10 @@ header {
     @media (min-width: $break-med) {
       margin-bottom: 2rem;
     }
+    span {
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
   }
   label {
     display: block;
@@ -76,6 +81,7 @@ header {
 .results {
   background-color: $bg;
   max-width: 32rem;
+  min-height: 6rem;
   padding: 1rem;
   border-radius: $radius;
   margin-bottom: 2rem;
@@ -83,4 +89,9 @@ header {
   ul {
     list-style: none;
   }
+}
+
+article {
+  // temporary
+  max-height: 90vh;
 }

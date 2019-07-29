@@ -50,7 +50,10 @@ const Search = () => {
       {modal ? (
         <Modal>
           <h3>This modal would normally take you to the repo on Github.</h3>
-          <p>(I dislike modals too.)</p>
+          <p>
+            But you can click on the links to view a readme. (I dislike modals
+            too.)
+          </p>
           <div className='buttons'>
             <button onClick={toggleModal}>Close</button>
           </div>

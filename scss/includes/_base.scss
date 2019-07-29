@@ -12,6 +12,9 @@ body {
   color: $text;
   margin: 1rem;
   font-family: $fonts;
+  background: url('https://source.unsplash.com/nDqA4d5NL0k/2000x2000');
+  background-size: cover;
+  min-height: 100vh;
 }
 
 a {
@@ -24,10 +27,11 @@ a {
 
 button {
   background-color: $dark;
+  border: 1px solid rgba(255, 255, 255, 0.5);
   padding: 0.5rem 1.5rem;
   color: white;
   font-size: 1rem;
-  border: #888 1px solid;
+  // border: #888 1px solid;
   border-radius: $radius;
   display: block;
   margin: 0 auto;

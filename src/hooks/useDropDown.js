@@ -5,7 +5,7 @@ const useDropdown = (label, defaultState, options) => {
   const id = `use-dropdown-${label.toLowerCase()}`;
   const Dropdown = () => (
     <label htmlFor={id}>
-      {label}
+      <span>{label}</span>
       <select
         disabled={options.length === 0}
         id={id}

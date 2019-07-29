@@ -35,7 +35,7 @@ export const sessionQuery = `
 }
 `;
 
-export const getSessionsByOrg = organization => `
+export const GET_SESSIONS_BY_ORG = organization => `
 {
   organization(login: "${organization}") {
     name
@@ -53,14 +53,6 @@ export const getSessionsByOrg = organization => `
         }
       }
     }
-  }
-}
-`;
-
-export const testQuery = `
-{
-  user(login: "DannyBoyNYC") {
-    id
   }
 }
 `;

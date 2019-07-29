@@ -13,11 +13,7 @@ const Details = props => {
       .then(readme => setReadme(atob(readme.content)));
   }, []);
 
-  return (
-    <div className='details'>
-      <Article readme={readme} />
-    </div>
-  );
+  return <Article readme={readme} />;
 };
 
 export default Details;
