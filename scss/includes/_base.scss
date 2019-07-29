@@ -8,7 +8,7 @@ html {
 }
 
 body {
-  background-color: $light-turq;
+  background-color: $bg-light;
   color: $text;
   margin: 1rem;
   font-family: $fonts;
@@ -16,15 +16,19 @@ body {
 
 a {
   text-decoration: none;
+  color: $text;
+  &:hover {
+    text-decoration: underline;
+  }
 }
 
 button {
-  background-color: $reddish;
-  padding: 5px 25px;
+  background-color: $dark;
+  padding: 0.5rem 1.5rem;
   color: white;
-  font-size: 18px;
-  border: #333 1px solid;
-  border-radius: 5px;
+  font-size: 1rem;
+  border: #888 1px solid;
+  border-radius: $radius;
   display: block;
   margin: 0 auto;
   cursor: pointer;

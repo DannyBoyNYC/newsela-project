@@ -12,4 +12,4 @@ The only session worth looking at for now is "Front-End-Summer19".
 To do:
 * Use Apollo for GraphQl?
 * Fixed in-page links on readme's
-* Add widescreen view
+* Add widescreen view (mobile first for now)

@@ -10,7 +10,7 @@ html {
 }
 
 body {
-  background-color: #81a69b;
+  background-color: #c6cc87;
   color: #111;
   margin: 1rem;
   font-family: "Lato", "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -18,15 +18,19 @@ body {
 
 a {
   text-decoration: none;
+  color: #111;
+}
+a:hover {
+  text-decoration: underline;
 }
 
 button {
-  background-color: #ad343e;
-  padding: 5px 25px;
+  background-color: #7695b3;
+  padding: 0.5rem 1.5rem;
   color: white;
-  font-size: 18px;
-  border: #333 1px solid;
-  border-radius: 5px;
+  font-size: 1rem;
+  border: #888 1px solid;
+  border-radius: 0.25rem;
   display: block;
   margin: 0 auto;
   cursor: pointer;
@@ -76,17 +80,51 @@ ul {
     transform: rotate(360deg);
   }
 }
+#modal {
+  background-color: rgba(51, 51, 51, 0.8);
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#modal:empty {
+  display: none;
+}
+
+#modal > div {
+  background-color: white;
+  max-width: 20rem;
+  padding: 1rem;
+  border-radius: 0.25rem;
+  text-align: center;
+}
+
+#modal .buttons button {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
 header {
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: space-between;
-  width: 90vw;
+  max-width: 32rem;
   padding: 1rem;
   padding-left: 0;
 }
 header a {
-  color: #fff;
+  color: #111;
   display: inline-block;
+}
+header a:hover {
+  text-decoration: underline;
 }
 header a.logo {
   background-image: url("dicon.svg");
@@ -97,15 +135,19 @@ header a.logo {
   font-weight: normal;
   padding-bottom: 0.5rem;
 }
+header a.logo:hover {
+  text-decoration: none;
+}
 
 .searchbox {
-  width: 90vw;
+  max-width: 32rem;
+  background-color: #8e9167;
 }
 .searchbox form {
-  background-color: #d9c148;
-  width: 28rem;
+  background-color: #8e9167;
+  width: 100%;
   margin: 0px 2rem 0px 0px;
-  padding: 2rem 1rem;
+  padding: 2rem;
   border-radius: 0.25rem;
 }
 @media (min-width: 46.25em) {
@@ -120,27 +162,29 @@ header a.logo {
 .searchbox input,
 .searchbox select {
   display: block;
-  margin-bottom: 2rem;
+  margin-bottom: 1.5rem;
   font-size: 1rem;
   height: 2rem;
-  width: 90%;
+  width: 94%;
 }
 .searchbox button:hover {
-  background-color: #111;
+  background-color: #7695b3;
 }
 .searchbox button:active {
-  background-color: #ad343e;
+  background-color: #7695b3;
 }
 .searchbox button:focus {
-  border: 1px solid #007eb6;
+  border: 1px solid #fff;
 }
 .searchbox button:disabled {
-  background-color: pink;
+  cursor: not-allowed;
+  opacity: 0.5;
+  background-color: rgba(51, 51, 51, 0.1);
 }
 
 .results {
-  background-color: #d9c148;
-  width: 90vw;
+  background-color: #8e9167;
+  max-width: 32rem;
   padding: 1rem;
   border-radius: 0.25rem;
   margin-bottom: 2rem;
@@ -174,6 +218,11 @@ header a.logo {
   font-family: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
   font-size: 0.5rem;
   background-color: rgba(0, 0, 0, 0.1);
+}
+
+.results h3 {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
 }
 
 /*# sourceMappingURL=style.css.map */

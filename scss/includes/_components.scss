@@ -1,16 +1,19 @@
 header {
   display: flex;
   align-content: center;
+  align-items: center;
   justify-content: space-between;
-  width: 90vw;
+  max-width: 32rem;
   padding: 1rem;
   padding-left: 0;
   @media (min-width: $break-med) {
-    // width: 1100px;
   }
   a {
-    color: #fff;
+    color: $text;
     display: inline-block;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   a.logo {
     background-image: url('dicon.svg');
@@ -20,19 +23,23 @@ header {
     font-size: 2rem;
     font-weight: normal;
     padding-bottom: 0.5rem;
+    &:hover {
+      text-decoration: none;
+    }
   }
 }
 
 .searchbox {
-  width: 90vw;
+  max-width: 32rem;
+  background-color: $bg;
   @media (min-width: $break-med) {
     // width: 1000px;
   }
   form {
-    background-color: $orange;
-    width: 28rem;
+    background-color: $bg;
+    width: 100%;
     margin: 0px 2rem 0px 0px;
-    padding: 2rem 1rem;
+    padding: 2rem;
     border-radius: $radius;
     @media (min-width: $break-med) {
       margin-bottom: 2rem;
@@ -45,28 +52,30 @@ header {
   input,
   select {
     display: block;
-    margin-bottom: 2rem;
+    margin-bottom: 1.5rem;
     font-size: 1rem;
     height: 2rem;
-    width: 90%;
+    width: 94%;
   }
   button:hover {
-    background-color: $text;
+    background-color: $dark;
   }
   button:active {
-    background-color: $reddish;
+    background-color: $dark;
   }
   button:focus {
-    border: 1px solid $specialblue;
+    border: 1px solid #fff;
   }
   button:disabled {
-    background-color: pink;
+    cursor: not-allowed;
+    opacity: 0.5;
+    background-color: $gray-010;
   }
 }
 
 .results {
-  background-color: $orange;
-  width: 90vw;
+  background-color: $bg;
+  max-width: 32rem;
   padding: 1rem;
   border-radius: $radius;
   margin-bottom: 2rem;

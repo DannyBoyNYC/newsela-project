@@ -14,7 +14,7 @@ const Results = props => {
   return (
     <div className='results'>
       {organization == '' ? (
-        <h2>Select a class.</h2>
+        <h3>Select a class.</h3>
       ) : (
         sessions.map(session => {
           return (
