@@ -8,7 +8,7 @@ I cannot release any of my current work so here's a simple project for review.
 
 Run `$ yarn` and `$ yarn run dev` (or `npm` equivalents).
 
-The only Session worth looking at for now is "Front-End-Summer19".
+The only Session worth looking at for now is "Front-End-Summer19". I wrote and prepared all the lessions.
 
 ## Features
 
