@@ -4,7 +4,7 @@ I cannot release any of my current work so here's a simple project for review.
 
 ## Instructions
 
-Github will hose my API key if I push it so you'll have to copy and paste [this](http://daniel.deverell.com/newsela/shhh.txt) into the `.env` file. (The keys will be deleted after review.)
+**IMPORTANT**: Github will hose my API key if I push it so you'll have to copy and paste [this](http://daniel.deverell.com/newsela/shhh.txt) into the `.env` file. (The keys will be deleted after review.)
 
 Run `$ yarn` and `$ yarn run dev` (or `npm` equivalents).
 
