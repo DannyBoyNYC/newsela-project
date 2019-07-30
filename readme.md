@@ -8,7 +8,7 @@ I cannot release any of my current work so here's a simple project for review.
 
 Run `$ yarn` and `$ yarn run dev` (or `npm` equivalents).
 
-Content is from a 3 semester bootcamp I run at NYU but **only "Front-End-Summer19"** is structured to conform to the requirements of this demo (descriptions, TOCs etc.).
+Content is from a bootcamp I run at NYU but **only "Front-End-Summer19"** is structured to conform to the requirements of this demo (descriptions, TOCs etc.).
 
 ## Features
 
