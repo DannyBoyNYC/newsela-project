@@ -16,7 +16,7 @@ Content is from a bootcamp I run at NYU but **only "Front-End-Summer19"** is str
 * Custom Hook 🎯
 * GraphQl endpoints 🎯
 * Context API 🎯
-* useReducer Hook
+* useReducer Hook 🎯
 * Modals via portals 🎯
 
 To do:
