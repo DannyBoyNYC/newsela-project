@@ -13,9 +13,10 @@ Content is from a bootcamp I run at NYU but **only "Front-End-Summer19"** is str
 ## Features
 
 * React Hooks 🎯
-* Custom Hooks 🎯
+* Custom Hook 🎯
 * GraphQl endpoints 🎯
 * Context API 🎯
+* useReducer Hook
 * Modals via portals 🎯
 
 To do:
