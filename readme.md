@@ -26,5 +26,6 @@ To do:
 * Fix in-page links on readme's
 * Use CSS in JS, Emotion?
 * Add widescreen view (mobile first for now) 
+* Finish adding proptypes and error checking
 
 Feel free to email me at daniel.deverell@gmail.com if needed. 
